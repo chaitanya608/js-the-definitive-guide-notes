@@ -28,5 +28,3 @@ console.log(obj2.hasOwnProperty("key1"));
 /*
 Here it is observed that if obj1.key1 is not writable then we can't set key1 as an own property also to obj2
 */
-
-// comment
