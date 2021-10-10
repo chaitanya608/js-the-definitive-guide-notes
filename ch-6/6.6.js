@@ -19,3 +19,4 @@ for (let prop in obj2) {
   // console.log(obj2[prop]);
   console.log(prop);
 }
+// comment
