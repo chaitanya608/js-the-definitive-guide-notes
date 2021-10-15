@@ -19,3 +19,25 @@ for (let prop in obj2) {
   // console.log(obj2[prop]);
   console.log(prop);
 }
+
+/*
+To demonstrate that Object.keys() and for/in cannot enumerate an object created by Object.create().
+Object.getOwnPropertyNames() and Reflect.ownKeys() can enumerate an object created by Object.create().
+*/
+const obj1 = Object.create(Object.prototype, {
+  key11: {
+    value: "value11",
+    // enumerable: false,
+  },
+  key12: {
+    value: "value12",
+  },
+  key13: {
+    value: "value13",
+  },
+  key11: {
+    value: "value14",
+  },
+});
+
+console.log(Object.keys(obj1));
