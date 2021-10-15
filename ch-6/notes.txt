@@ -1,0 +1,1 @@
+* Among Object.keys(), Object.getOwnPropertyNames(), Object.getOwnPropertySymbols() and Reflect.ownKeys(), Object.keys() is the only function that ignores non-enumerable properties. Also, none of these functions enumerate inherited properties.
